@@ -139,7 +139,7 @@ jmpTextScan@Main:
 jmpTextSkip@Main:
 	mov AL, CHR_LF
 	repne scasb
-	jne	jmpTextEnd@Main
+	jne jmpTextEnd@Main
 	jECXz jmpTextEnd@Main
 
 	dec EDX
