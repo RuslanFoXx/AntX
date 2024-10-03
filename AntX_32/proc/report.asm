@@ -56,7 +56,7 @@ jmpSetReport@PostReport:
 
 		lea ESI, [ESI+20]
 		mov  CX, [ESI]
-			movsw
+		movsw
 		rep movsb
 		mov [SetRouteReport], EDX
 
