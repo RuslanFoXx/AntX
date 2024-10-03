@@ -17,19 +17,19 @@ proc HTTPRequest  ;  lpSocketIoData
 ;   RCX = CountBytes - MethodSize
 ;------------------------------------------------
 	xor R9,  R9
-    mov R10, R9
-    mov RDI, R9
-    inc R9d
+	mov R10, R9
+	mov RDI, R9
+	inc R9d
 
-    mov RDX, RSI
-    mov R11, RCX
-    mov R12, RDX
+	mov RDX, RSI
+	mov R11, RCX
+	mov R12, RDX
 	jmp jmpFindFirst@Request
 ;------------------------------------------------
 ;       * * *  Set Connection
 ;------------------------------------------------
 jmpGetConnect@Request:
-    xor R9d, R9d
+	xor R9d, R9d
 	jmp jmpFindEnd@Request
 ;------------------------------------------------
 ;       * * *  Set Length
@@ -229,10 +229,10 @@ jmpSetUrlSize@Request:
 
 	mov RAX, RDI
 	sub RAX, R10
-    sub  AX, 2
+	sub  AX, 2
 	mov [R10], AX
 
-;   mov DL, SRV_ERR_PathSize
+;	mov DL, SRV_ERR_PathSize
 	cmp AX, MAX_PATH_SIZE
 	ja jmpSyntaxError@Request
 ;------------------------------------------------
