@@ -89,7 +89,7 @@ jmpEndHeader@Request:
 	jz jmpGetUrlPath@Request
 
 		mov RSI, R10
-	    sub R14, RCX
+		sub R14, RCX
 		call StrToWord
 
 		inc RAX
