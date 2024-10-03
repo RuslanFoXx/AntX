@@ -7,12 +7,12 @@
 ;------------------------------------------------
 ;       * * *  Service Errors
 ;------------------------------------------------
-REPORT_MESSAGE_COUNT		equ 83
+REPORT_MESSAGE_COUNT			equ 83
 SYS_ERR_ConfigFile			equ  0
 
 SYS_ERR_Dispatcher			equ  1
 SYS_ERR_Register			equ  2
-SYS_ERR_StartPending		equ  3
+SYS_ERR_StartPending			equ  3
 SYS_ERR_Start				equ  4
 SYS_ERR_StopPending			equ  5
 SYS_ERR_Stop				equ  6
@@ -29,9 +29,9 @@ SYS_ERR_SetEvent			equ 13
 SYS_ERR_SocketPort			equ 14
 SYS_ERR_ProcEvent			equ 15
 
-SYS_ERR_ThreadRouter		equ 16
-SYS_ERR_ThreadListen		equ 17
-SYS_ERR_ThreadProcess		equ 18
+SYS_ERR_ThreadRouter			equ 16
+SYS_ERR_ThreadListen			equ 17
+SYS_ERR_ThreadProcess			equ 18
 ;------------------------------------------------
 ;       * * *  System Errors
 ;------------------------------------------------
@@ -47,7 +47,7 @@ CFG_ERR_HostValue			equ 24
 ;------------------------------------------------
 ;       * * *  TimeOut (lpTimeIoData)
 ;------------------------------------------------
-SYS_ERR_TimeShutDown		equ 25
+SYS_ERR_TimeShutDown			equ 25
 ;------------------------------------------------
 ;       * * *  Processes (lpProcIoData)
 ;------------------------------------------------
@@ -66,7 +66,7 @@ SRV_ERR_SendPipe			equ 35
 ;------------------------------------------------
 ;       * * *  Listen Errors (lpListIoData)
 ;------------------------------------------------
-NET_ERR_SocketMemory		equ 36
+NET_ERR_SocketMemory			equ 36
 NET_ERR_FindSocket			equ 37
 NET_ERR_PortSocket			equ 38
 NET_ERR_SendListen			equ 39
@@ -83,7 +83,7 @@ NET_ERR_Accept				equ 44
 SRV_ERR_WaitRoute			equ 45
 SRV_ERR_RouteMode			equ  ?
 
-SRV_ERR_FileAttributes		equ  ?
+SRV_ERR_FileAttributes			equ  ?
 SRV_ERR_OpenFile			equ 48
 SRV_ERR_OpenSize			equ  ?
 SRV_ERR_ReadFile			equ 50
@@ -119,8 +119,8 @@ SYS_MSG_Stop				equ 68
 SYS_MSG_ShutDown			equ 69
 
 SRV_MSG_Connected			equ 70
-SRV_MSG_Disconnected		equ 71
-SRV_MSG_BreakConnect		equ 72
+SRV_MSG_Disconnected			equ 71
+SRV_MSG_BreakConnect			equ 72
 SRV_MSG_TimeOut				equ 73
 SRV_MSG_Close				equ 74
 ;------------------------------------------------
@@ -128,13 +128,13 @@ SRV_MSG_Close				equ 74
 ;------------------------------------------------
 SRV_ERR_Method				equ 75
 SRV_ERR_Header				equ 76
-SRV_ERR_Url					equ 77
+SRV_ERR_Url				equ 77
 SRV_ERR_PathSize			equ 78
 SRV_MSG_OpenAccess			equ 79
-SRV_MSG_RecvDataSize		equ 80
+SRV_MSG_RecvDataSize			equ 80
 
-NET_MSG_ConnectLimit		equ 81
-SRV_MSG_ProcessLimit		equ 82
+NET_MSG_ConnectLimit			equ 81
+SRV_MSG_ProcessLimit			equ 82
 
 MSG_NO_ERROR				equ SRV_MSG_Send
 MSG_NO_INFORMATION			equ SYS_MSG_Start
